@@ -1,7 +1,7 @@
 from graphics import *
 from math import *
 def gobangwin():
-    win=GraphWin("this is a gobang game",400,400) #ÖÆ×÷21x21µÄÆåÅÌ
+    win=GraphWin("this is a gobang game",400,400)
     win.setBackground("yellow")
     i1=0
      
@@ -51,20 +51,20 @@ def main():
                          if n<17 and (m,n) in list1 and (m,n+1) in list1 and (m,n+2) in list1 and (m,n+3) in list1 and (m,n+4) in list1 :
                              message = Text(Point(100,100),"white win.")
                              message.draw(win)
-                             g = 1     #ÅÐ¶Ï°×ÆåÊúÐÐ
+                             g = 1    
                          elif m<17 and  (m,n) in list1 and (m+1,n) in list1 and (m+2,n) in list1 and (m+3,n) in list1 and (m+4,n) in list1 :
                              message = Text(Point(100,100),"white win.")
                              message.draw(win)
-                             g = 1   #ÅÐ¶Ï°×ÆåºáÐÐ
+                             g = 1  
                          elif m<17 and n<17 and (m,n) in list1 and (m+1,n+1) in list1 and (m+2,n+2) in list1 and (m+3,n+3) in list1 and (m+4,n+4) in list1 :
                              message = Text(Point(100,100),"white win.")
                              message.draw(win)
-                             g = 1    #ÅÐ¶Ï°×ÆåÐ±ÐÐ
+                             g = 1  
                          elif m<17 and n>3 and (m,n) in list1 and (m+1,n-1) in list1 and (m+2,n-2) in list1 and (m+3,n-3) in list1 and (m+4,n-4) in list1 :
                              message = Text(Point(100,100),"white win.")
                              message.draw(win)
-                             g = 1     #ÅÐ¶Ï°×ÆåÐ±ÐÐ
-                         else: change = change+1  #»»ºÚÆå×ß
+                             g = 1     
+                         else: change = change+1 
              
        else:
         p2 = win.getMouse()
@@ -84,20 +84,20 @@ def main():
                          if n<17 and (m,n) in list2 and (m,n+1) in list2 and (m,n+2) in list2 and (m,n+3) in list2 and (m,n+4) in list2 :
                              message = Text(Point(100,100),"black win.")
                              message.draw(win)
-                             g = 1    #ÅÐ¶ÏºÚÆåÊúÐÐ
+                             g = 1    
                          elif m<17 and  (m,n) in list2 and (m+1,n) in list2 and (m+2,n) in list2 and (m+3,n) in list2 and (m+4,n) in list2 :
                              message = Text(Point(100,100),"black win.")
                              message.draw(win)
-                             g = 1  #ÅÐ¶ÏºÚÆåºáÐÐ
+                             g = 1  
                          elif m<17 and n<17 and (m,n) in list2 and (m+1,n+1) in list2 and (m+2,n+2) in list2 and (m+3,n+3) in list2 and (m+4,n+4) in list2 :
                              message = Text(Point(100,100),"black win.")
                              message.draw(win)
-                             g = 1   #ÅÐ¶ÏºÚÆåÐ±ÐÐ
+                             g = 1  
                          elif m<17 and n>3 and (m,n) in list2 and (m+1,n-1) in list2 and (m+2,n-2) in list2 and (m+3,n-3) in list2 and (m+4,n-4) in list2 :
                              message = Text(Point(100,100),"black win.")
                              message.draw(win)
-                             g = 1   #ÅÐ¶ÏºÚÆåÐ±ÐÐ
-                         else: change = change+1  #»»°×Æå×ß
+                             g = 1  
+                         else: change = change+1  
                       
     message = Text(Point(100,120),"Click anywhere to quit.")
     message.draw(win)
